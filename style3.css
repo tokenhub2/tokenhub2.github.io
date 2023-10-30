@@ -1,0 +1,496 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.header{
+    min-height:100vh;
+    width:100%;
+    background-image:linear-gradient(rgba(7,9,30,0.7),rgba(7,9,30,0.7)),
+    url(https://digitalscholar.in/wp-content/uploads/2022/05/Marketing-automation-1.gif);
+    background-position:center;
+    background-size:cover;
+    position:relative;
+
+  }
+  nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+   
+    
+  }
+  nav img{
+    width: 120px;
+
+  }
+  .nav-links{
+    flex: l;
+    text-align: right;
+  }
+  .nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+  }
+  .nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+  }
+  .nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  .nav-links ul li:hover::after{
+    width: 100%;
+  }
+  .text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+  }
+  .text-box h1{
+    font-size: 62px;
+
+  }
+  .text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+  }
+  .hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  .hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+  }
+  nav .fa{
+    display: none;
+  }
+
+
+
+  @media(max-width:700px){
+    .text-box h1{
+    font-size:20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width:200px;
+        top:0;
+        right:-200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+  }
+
+ /* -----Domain----*/
+
+.domain{
+    width: 100%;
+    margin:0;
+    text-align: center;
+    padding-top: 100px;
+   
+    
+    
+}
+.domain h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.domain p{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+
+    display: flex;
+    flex-direction: row;
+    padding-top: 28px;
+    justify-content: space-around;
+    
+    
+    
+}
+
+
+.domain-col{
+    display: flex;
+    justify-content: center;
+    flex-basis: 30%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    padding: 50px;
+    
+    justify-content: center;
+
+}
+.domain-col img{
+    width: 90%;
+    display: block;
+    
+  
+    
+    
+}
+.layer{
+    background:transparent;
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    align-items: center;
+    border-radius: 20px 16px;
+}
+.layer:hover{
+    background: rgba(38, 175, 175, 0.7) ;
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+/*--Events--*/
+.Events{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.event-cont{
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+
+
+}
+    
+.Events img{
+    margin-top: 10px;
+    height: 90%;
+    width: 60%;
+
+
+
+}
+/*---Projects---*/
+.projects{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+
+
+}
+
+
+
+/* -----Teams----*/
+
+.Teams{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 100px;
+}
+.Teams h1{
+    padding-bottom: 50px;
+}
+
+
+
+.fcontainer{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+}
+.dipen img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}  
+
+.jeet img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.reddy img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.teams h2{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+
+.core{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 100px;
+    
+    
+}
+
+.tushar img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.marshal img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    object-fit: cover;
+    
+
+}  
+.Email{
+    font-size: 30px; 
+    color: white; 
+    text-decoration: none;
+}
+
+.linkedin{
+    font-size: 30px; /* Adjust the font size as needed */
+    color: blue; /* LinkedIn brand color */
+    text-decoration: none;
+}
+.facebook{
+    font-size: 30px; 
+    color: white; 
+    text-decoration: none;
+}
+.call{
+    font-size: 30px; 
+    color:green; 
+    text-decoration: none;
+}
+.instagram{
+    font-size: 30px; 
+    color:lightblue; 
+    text-decoration: none;
+}
+
+.rupen img{
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+
+}  
+
+.middle{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 300px;
+    margin-top: 100px;
+}
+
+
+.irshad img{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+   
+} 
+
+
+
+.chinmoy img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 0 -10px;
+
+
+    
+} 
+
+
+.akansha img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+} 
+
+.last{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 350px;
+    margin-top: 100px;
+   
+}
+
+
+.harinath img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+} 
+.himanshu img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 0 -10px;
+}
+
+
+/*Call To Action****/
+.cta{
+    
+    display: flex;
+    padding-top: 100px;
+    background:linear-gradient(rgba(7,9,30,0.7),rgba(7,9,30,0.7));
+    
+}
+.cta p{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 26px;
+    color: #fff;
+     
+
+}
+.cta-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+    
+    
+}
+
+.cta-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+
+.contactus{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 100px;
+    
+}
+
+
+/*******contact us footer***/
+.contactus{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    border: 1px solid red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
